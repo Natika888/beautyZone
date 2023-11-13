@@ -1,0 +1,132 @@
+.find {
+    display: flex;
+
+    // .find__container
+    &__container {
+        width: 1090px;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+
+        @media (min-width: $bp-desktop) {
+            width: 1090px;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 1;
+            padding-top: 95px;
+            padding-bottom: 95px;
+        }
+    }
+
+    // .find__title
+
+    &__title {
+        color: var(--beauty-landing-2-c-1, #011c44);
+        text-align: center;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: normal;
+
+        @media (min-width: $bp-desktop) {
+            font-size: 64px;
+            font-weight: 700;
+        }
+    }
+
+    // .find__content
+
+    &__content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+        width: 100%;
+
+        @media (min-width: $bp-desktop) {
+            gap: 32px;
+        }
+    }
+
+    // .find__map
+
+    &__map {
+        width: 100%;
+        border-radius: 24px;
+        max-height: 230px;
+
+        @media (min-width: $bp-desktop) {
+            width: 60%;
+            border-radius: 32px;
+        }
+    }
+
+    &__backdrop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        border-radius: 24px;
+        background-color: var(--beauty-landing-2-c-1);
+        padding: 42px 24px;
+        color: white;
+
+        @media (min-width: $bp-desktop) {
+            width: 40%;
+            border-radius: 32px;
+        }
+    }
+
+    // .find__form
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+
+        @media (min-width: $bp-desktop) {
+        }
+    }
+
+    &__form-title {
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+    &__form-field {
+        margin-bottom: 16px;
+    }
+
+    &__form-input {
+        width: 240px;
+        padding: 16px 24px;
+        border-radius: 24px;
+        border: 1px solid var(--beauty-landing-25, #747272);
+        background-color: var(--beauty-landing-2-c-1);
+        color: white;
+    }
+
+    &__form-input:focus {
+        outline: none;
+        color: white;
+    }
+
+    &__form-input::placeholder {
+        font-family: 'Roboto';
+        font-size: 13px;
+        font-weight: 400;
+        color: white;
+        display: inline;
+    }
+
+    // &__form-label {
+    //     display: none;
+    // }
+
+    &__form-btn {        
+        width: 240px;
+    }
+}

@@ -1,0 +1,23 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &__nav {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            gap: 40px;
+        }
+    }
+
+    &__burger {
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
+}

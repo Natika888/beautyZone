@@ -1,0 +1,31 @@
+:root {
+    --beauty-landing-2-c-1: #011C44;
+    --beauty-landing-2-c-2: #2B7FFF;
+}
+
+.carusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    fill: var(--beauty-landing-2-c-1);
+    border-radius: 50%;
+    border: 1px solid var(--beauty-landing-2-c-1);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* .carusel-arrow {
+    fill: var(--beauty-landing-2-c-1);
+} */
+
+.carusel:hover {
+    background-color: var(--beauty-landing-2-c-1);
+    fill: aliceblue;
+}
+
+/* .carusel:hover .carusel-arrow {
+    fill: aliceblue;
+} */

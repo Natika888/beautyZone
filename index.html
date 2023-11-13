@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <title>Beauty Zone</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container"></div>
+        </header>
+        <main>
+            <div class="visually-hidden">
+                <section class="hero">
+                    <div class="circle"></div>
+                </section>
+                <button class="carusel">
+                    <svg class="carusel-arrow" width="17" height="'17">
+                        <use href="./images/icons.svg#icon-Arrow"></use>
+                    </svg>
+                </button>
+            </div>
+            <section class="find">
+                <div class="find__container">
+                    <h2 class="find__title">
+                        Як нас <span class="colored">знайти</span>
+                    </h2>
+                    <div class="find__content">
+                        <iframe
+                            class="find__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.936792054004!2d30.511426859733177!3d50.44227799542862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef9a90945a1%3A0x10dd6115b6be3f7c!2sTaras%20Shevchenko%20Park!5e0!3m2!1sen!2sua!4v1699691995089!5m2!1sen!2sua"
+                            width="600"
+                            height="480"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                        <div class="find__backdrop">
+                            <h3 class="find__form-title">
+                                Запишіться
+                                <span class="colored">безкоштовно</span> та
+                                отримайте подарунок
+                            </h3>
+                            <form class="find__form" autocomplete="off">
+                                <div class="find__form-field">
+                                    <label
+                                        class="find__form-label visually-hidden"
+                                        for="user-name"
+                                        >Ваше ім'я та прізвище</label
+                                    >
+                                    <input
+                                        class="find__form-input"
+                                        type="text"
+                                        name="user-name"
+                                        id="user-name"
+                                        placeholder="Ваше ім'я та прізвище"
+                                    />
+                                </div>
+                                <div class="find__form-field">
+                                    <label
+                                        for="user-phone"
+                                        class="find__form-label visually-hidden"
+                                        >Ваш номер телефону</label
+                                    >
+                                    <input
+                                        class="find__form-input"
+                                        type="tel"
+                                        name="user-phone"
+                                        id="user-phone"
+                                        placeholder="Ваш номер телефону"
+                                    />
+                                </div>
+                                <div class="find__form-field">
+                                    <label
+                                        for="user-email"
+                                        class="find__form-label visually-hidden"
+                                        >Ваша електронна пошта</label
+                                    >
+                                    <input
+                                        class="find__form-input"
+                                        type="email"
+                                        name="user-email"
+                                        id="user-email"
+                                        placeholder="Ваша електронна пошта"
+                                    />
+                                </div>
+                                <button class="find__form-btn btn" type="submit">Записатись безкоштовно</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

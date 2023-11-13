@@ -1,0 +1,56 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+
+@import './utils/mixins';
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: 'Roboto', sans-serif;
+$fontSize: 20px;
+//</Шрифт по умолчанию>==========================================================================================
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // flex: 1 1 auto;
+    font-family: $fontFamily;
+    font-style: normal;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+[class*='__container'] {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $bp-tablet) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        max-width: 1270px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@import './components/find';
+
+.circle {
+    @include circle(100px, 100px, green, 50%);
+}
