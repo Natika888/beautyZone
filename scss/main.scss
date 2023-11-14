@@ -5,7 +5,7 @@
 @import './components/buttons';
 @import './components/links';
 @import './components/header';
-
+@import './components/choose';
 @import './utils/mixins';
 
 //<Шрифт по умолчанию>==========================================================================================
@@ -46,6 +46,16 @@ body {
         max-width: 1270px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+[class*='__title'] {
+    font-size: 32px;
+    font-weight: 500;
+
+    @media (min-width: $bp-desktop) {
+        font-size: 64px;
+        font-weight: 700;
     }
 }
 

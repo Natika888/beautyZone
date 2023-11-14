@@ -1,6 +1,7 @@
 .find {
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
 
     // .find__container
     &__container {        
@@ -104,6 +105,7 @@
     }
 
     &__form-title {
+        width: 270px;
         text-align: center;
         font-size: 20px;
         font-style: normal;
@@ -155,7 +157,7 @@
     }
 
     &__form-confidantials {
-        max-width: 205px;
+        width: 205px;
         font-size: 12px;
         font-weight: 400;
         line-height: 18px;

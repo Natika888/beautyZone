@@ -1,0 +1,55 @@
+.choose {
+    padding-top: 104px;
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-position-x: center;
+    
+    // .choose__container
+
+    &__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .choose____title
+
+    &__title {
+        text-align: center;
+        width: 210px;
+        margin-bottom: 24px;
+    }
+
+    // .choose__cards
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    // .choose__card
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FFF;
+        padding: 24px 32px;
+        border-radius: 32px;
+        box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+    }
+
+    &__card .icon {
+        margin-bottom: 12px;
+        fill: var(--beauty-landing-2-c-2) ;
+    }
+
+    &__card-text {
+        max-width: 250px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+}
