@@ -12,16 +12,14 @@
             <div class="header__container"></div>
         </header>
         <main>
-            <div class="visually-hidden">
-                <section class="hero">
-                    <div class="circle"></div>
-                </section>
-                <button class="carusel">
-                    <svg class="carusel-arrow" width="17" height="'17">
-                        <use href="./images/icons.svg#icon-Arrow"></use>
-                    </svg>
-                </button>
-            </div>
+            <section class="hero">
+                <div class="hero__container">
+                    <span class="hero__subtitle">Косметологічна клініка</span>
+                    <h1 class="hero__title colored">beauty zone</h1>
+                    <button class="hero__btn btn">Замовити дзвінок</button>
+                    <p class="hero__text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+                </div>
+            </section>
             <section class="choose">
                 <div class="choose__container">
                     <h2 class="choose__title">
@@ -55,6 +53,47 @@
                                 недоліки, а не переробити
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="procedures visually-hidden">
+                <div class="procedures__container">
+                    <h2 class="procedures__title">Наші <span class="colored">процедури</span></h2>
+                    <div class="procedures__content">
+                        <button class="carusel">
+                            <svg class="carusel-arrow" width="17" height="'17">
+                                <use href="./images/icons.svg#icon-Arrow"></use>
+                            </svg>
+                        </button>
+                        <div class="procedures__cards">
+                            <div class="procedures__card">
+                                <span class="procedures__card-text">Маски для обличчя</span>
+                            </div>
+                            <div class="procedures__card">
+                                <span class="procedures__card-text">Ін'єкції 
+                                    для обличчя</span>
+                            </div>
+                            <div class="procedures__card">
+                                <span class="procedures__card-text">Очищення 
+                                    обличчя</span>
+                            </div>
+                        </div>
+                        <button class="carusel carusel-right">
+                            <svg class="carusel-arrow" width="17" height="'17">
+                                <use href="./images/icons.svg#icon-Arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="carusel-nav">
+                        <svg class="carusel-dot dot-active" xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                            <circle cx="6" cy="5.5" r="5.5" />
+                        </svg>
+                        <svg class="carusel-dot" xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                            <circle cx="6" cy="5.5" r="5.5"/>
+                        </svg>
+                        <svg class="carusel-dot" xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                            <circle cx="6" cy="5.5" r="5.5" />
+                        </svg>
                     </div>
                 </div>
             </section>
@@ -107,6 +146,8 @@
                                         name="user-phone"
                                         id="user-phone"
                                         placeholder="Ваш номер телефону"
+                                        pattern= "^\+[0-9]{12}"
+                                        title="+380xxxxxxxxx"
                                     />
                                 </div>
                                 <div class="find__form-field">
@@ -152,5 +193,74 @@
             </section>
         </main>
         <footer></footer>
+
+        <div class="backdrop visually-hidden">
+            <div class="modal">
+                <h3 class="find__form-title">
+                    Запишіться
+                    <span class="colored">безкоштовно</span> та
+                    отримайте подарунок
+                </h3>
+                <form class="find__form" autocomplete="off">
+                    <div class="find__form-field">
+                        <label
+                            class="find__form-label visually-hidden"
+                            for="user-name"
+                            >Ваше ім'я та прізвище</label
+                        >
+                        <input
+                            class="find__form-input"
+                            type="text"
+                            name="user-name"
+                            id="user-name"
+                            placeholder="Ваше ім'я та прізвище"
+                        />
+                    </div>
+                    <div class="find__form-field">
+                        <label
+                            for="user-phone"
+                            class="find__form-label visually-hidden"
+                            >Ваш номер телефону</label
+                        >
+                        <input
+                            class="find__form-input"
+                            type="tel"
+                            name="user-phone"
+                            id="user-phone"
+                            placeholder="Ваш номер телефону"
+                            pattern= "^\+[0-9]{12}"
+                            title="+380xxxxxxxxx"
+                        />
+                    </div>
+                    <div class="find__form-field">
+                        <label
+                            for="user-email"
+                            class="find__form-label visually-hidden"
+                            >Ваша електронна пошта</label
+                        >
+                        <input
+                            class="find__form-input"
+                            type="email"
+                            name="user-email"
+                            id="user-email"
+                            placeholder="Ваша електронна пошта"
+                        />
+                    </div>
+                    <button
+                        class="find__form-btn btn"
+                        type="submit"
+                    >
+                        Записатись безкоштовно
+                    </button>
+                </form>
+                <p class="find__form-confidantials">
+                    Натискаючи на кнопку я погоджуюсь
+                    <a class="confidantials__link" href="http://"
+                        >з політикою конфіденційності</a
+                    >
+                </p>
+            </div>
+            
+        </div>
     </body>
 </html>
