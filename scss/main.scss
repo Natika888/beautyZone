@@ -1,15 +1,7 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './base';
-@import './utils/utils';
-@import './components/buttons';
-@import './components/links';
-@import './components/header';
-@import './components/hero';
-@import './components/choose';
-@import './components/procedures';
-@import './components/modal';
-@import './utils/mixins';
+
 
 //<Шрифт по умолчанию>==========================================================================================
 $fontFamily: 'Roboto', sans-serif;
@@ -62,8 +54,15 @@ body {
     }
 }
 
+@import './utils/utils';
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero';
+@import './components/choose';
+@import './components/procedures';
+@import './components/modal';
+@import './utils/mixins';
 @import './components/find';
 
-.circle {
-    @include circle(100px, 100px, green, 50%);
-}
+
