@@ -5,19 +5,30 @@
     background-position-x: center;
     background-position-y: -60px;
 
+    @media (min-width: $bp-desktop) {
+        padding-bottom: 96px;
+    }
+
     // .choose__container
 
     &__container {
         flex-direction: column;
         align-items: center;
+
+        // @media (min-width: $bp-desktop) {
+        //     flex-direction: row;
+        // }
     }
 
     // .choose____title
 
     &__title {
-        text-align: center;
-        width: 210px;
+        text-align: center;        
         margin-bottom: 24px;
+
+        @media (min-width: $bp-desktop) {
+            margin-bottom: 48px;
+        }
     }
 
     // .choose__cards
@@ -27,6 +38,11 @@
         flex-direction: column;
         align-items: center;
         gap: 16px;
+
+        @media (min-width: $bp-desktop) {
+                flex-direction: row;
+                gap: 56px;
+            }
     }
 
     // .choose__card
@@ -39,6 +55,10 @@
         padding: 24px 32px;
         border-radius: 32px;
         box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+
+        @media (min-width: $bp-desktop) {
+            min-height: 180px;
+        }
     }
 
     &__card .icon {
@@ -52,5 +72,9 @@
         font-weight: 400;
         line-height: 24px;
         text-align: center;
+
+        @media (min-width: $bp-desktop) {
+            max-width: 275px;
+        }
     }
 }
