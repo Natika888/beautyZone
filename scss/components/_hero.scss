@@ -13,6 +13,10 @@
     background-size: cover;
     padding-bottom: 60px;
 
+    @media screen and (min-width: $bp-desktop) {
+        padding-top: 123px;
+    }
+
     // .hero__container
 
     &__container {

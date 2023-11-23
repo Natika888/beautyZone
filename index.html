@@ -10,6 +10,28 @@
     <body>
         <header class="header">
             <div class="header__container">
+                <nav class="header__nav">
+                    <a href="#" class="logo"></a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link colored">Про нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#why" class="menu__link">Чому ми</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#procedures" class="menu__link"> Наші процедури </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#find" class="menu__link"> Контакти </a>
+                        </li>                          
+                    </ul>
+                    <ul class="socials__list">
+                        <li class="socials__item"></li>
+                        <li class="socials__item"></li>
+                        <li class="socials__item"></li>
+                    </ul>
+                </nav>
                 <button class="burger menu-btn-open" type="button">
                     <svg class="burger__menu" width="24" height="24">
                         <use href="./images/icons.svg#icon-menu"></use>
@@ -38,8 +60,8 @@
             </section>
             <section class="choose">
                 <div class="choose__container">
-                    <h2 class="choose__title">
-                        Чому люди <span class="colored">обирають нас</span>
+                    <h2 class="choose__title" id="why">
+                        Чому люди <br><span class="colored">обирають нас</span>
                     </h2>
                     <div class="choose__cards">
                         <div class="choose__card">
@@ -76,7 +98,7 @@
             </section>
             <section class="procedures ">
                 <div class="procedures__container">
-                    <h2 class="procedures__title">
+                    <h2 class="procedures__title" id="procedures">
                         Наші <span class="colored">процедури</span>
                     </h2>
                     <div class="procedures__content">
@@ -147,7 +169,7 @@
             </section>
             <section class="find">
                 <div class="find__container">
-                    <h2 class="find__title">
+                    <h2 class="find__title" id="find">
                         Як нас <span class="colored">знайти</span>
                     </h2>
                     <div class="find__content">
