@@ -3,6 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    background: rgba(255, 255, 255, 0.25);                                     
+    backdrop-filter: blur(5px);
 
     &__container {
         position: relative;
@@ -17,29 +19,46 @@
             align-items: center;
             flex-grow: 1;
             gap: 40px;
-            padding-top: 42px;
-            padding-bottom: 42px;
+            padding-top: 32px;
+            padding-bottom: 32px;
         }
     }
 }
 
 .menu {
-
     &__list {
         display: flex;
 
-        @media screen and (min-width: $bp-desktop){
-        gap: 56px;
+        @media screen and (min-width: $bp-desktop) {
+            gap: 56px;
         }
     }
 
     &__link {
-        color: var(--beauty-landing-2-c-1, #011C44);
+        color: var(--beauty-landing-2-c-1, #011c44);
         @media screen and (min-width: $bp-desktop) {
             font-size: 18px;
             font-weight: 400;
-
         }
+
+        &.colored {
+            color: var(--beauty-landing-2-c-2);
+        }
+    }
+}
+
+.socials {
+
+    &__list {
+        display: flex;
+        gap: 32px;
+        color: var(--beauty-landing-2-c-1);
+    }
+
+    
+    &__icon {
+        width: 32px;
+        height: 32px;
     }
 }
 
@@ -56,5 +75,12 @@
 
     &__menu {
         fill: #fff;
+    }
+}
+
+.logo {
+    &__img {
+        width: 74px;
+        height: 42px;
     }
 }
