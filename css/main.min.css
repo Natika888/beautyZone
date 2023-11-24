@@ -218,6 +218,15 @@ body.lock {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .menu__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+}
 .menu__list {
   display: flex;
 }
@@ -699,7 +708,7 @@ body.lock {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #fff;
   transform: translateX(100%);
   transition: transform 0.3s;
@@ -711,4 +720,5 @@ body.lock {
   position: absolute;
   top: 16px;
   right: 20px;
+  fill: var(--beauty-landing-2-c-1);
 }/*# sourceMappingURL=main.min.css.map */

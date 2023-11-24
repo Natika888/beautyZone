@@ -3,7 +3,7 @@
     top: 0;
     left: 0;      
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #fff;
     transform: translateX(100%);
     transition: transform 0.3s;
@@ -16,5 +16,6 @@
         position: absolute;
         top: 16px;
         right: 20px;
+        fill: var(--beauty-landing-2-c-1);
     }
 }
