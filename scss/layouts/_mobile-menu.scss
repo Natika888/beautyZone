@@ -1,15 +1,33 @@
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;      
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    transform: translateX(100%);
-    transition: transform 0.3s;
+.header__nav {
+    
+    &.active {
+        display: block;
+        transform: translateX(0);        
 
-    &.is-open {
-        transform: translateX(0);
+        
+    }
+
+    .logo {
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        width: 57px;
+        height: 30px;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 70vh;
+        font-size: 32px;
+        padding-top: 50px;
+    }
+
+    .socials__list {
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
     }
 
     &__icon-close {
@@ -18,4 +36,20 @@
         right: 20px;
         fill: var(--beauty-landing-2-c-1);
     }
+}
+
+.menu-btn-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    // color: var(--beauty-landing-2-c-1);
+    // fill: var(--beauty-landing-2-c-1);
+}
+
+.burger__menu>.logo {
+    position: absolute;
+    top: 16px;
+    width: 54px;
+    height: 30px;
+    
 }

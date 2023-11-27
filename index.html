@@ -78,11 +78,22 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="burger menu-btn-open" type="button">
-                    <svg class="burger__menu" width="24" height="24">
-                        <use href="./images/icons.svg#icon-menu"></use>
-                    </svg>
-                </button>
+
+                
+                <div class="burger__menu">
+                    <a href="#" class="logo">
+                        <img
+                            src="./images/logo.svg"
+                            alt="Logo"
+                            class="logo__img"
+                        />
+                    </a>
+                    <button class="burger__menu-btn menu-btn-open" type="button">
+                        <svg class="burger__menu-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
                 <button
                     class="menu__btn-close menu-btn-close visually-hidden"
                     type="button"
@@ -94,16 +105,18 @@
                         height="32"
                         viewBox="0 0 32 32"
                         fill="none"
+                        
                     >
                         <path
                             d="M8 8L16 16L24 8"
-                            stroke="white"
+                            stroke="#011C44"
                             stroke-width="2"
                             stroke-linecap="round"
+                            
                         />
                         <path
                             d="M8 24L16 16L24 24"
-                            stroke="white"
+                            stroke="#011C44"
                             stroke-width="2"
                             stroke-linecap="round"
                         />
@@ -186,34 +199,40 @@
                         </button>
                         <div class="procedures__cards">
                             <div class="procedures__card">
-                                <img
-                                    src="./images/maskFace.jpg"
-                                    alt="Mask"
-                                    class="procedures__card-image"
-                                />
-                                <span class="procedures__card-text"
-                                    >Маски для обличчя</span
-                                >
+                                <div class="procedures__card-container">
+                                    <img
+                                        src="./images/maskFace.jpg"
+                                        alt="Mask"
+                                        class="procedures__card-image"
+                                    />
+                                    <span class="procedures__card-text"
+                                        >Маски для обличчя</span
+                                    >
+                                </div>
                             </div>
                             <div class="procedures__card">
-                                <img
-                                    src="./images/needleFace.jpg"
-                                    alt="Mask"
-                                    class="procedures__card-image"
-                                />
-                                <span class="procedures__card-text"
-                                    >Ін'єкції для обличчя</span
-                                >
+                                <div class="procedures__card-container">
+                                    <img
+                                        src="./images/needleFace.jpg"
+                                        alt="Mask"
+                                        class="procedures__card-image"
+                                    />
+                                    <span class="procedures__card-text"
+                                        >Ін'єкції для обличчя</span
+                                    >
+                                </div>
                             </div>
                             <div class="procedures__card">
-                                <img
-                                    src="./images/spatulaFace.jpg"
-                                    alt="Mask"
-                                    class="procedures__card-image"
-                                />
-                                <span class="procedures__card-text"
-                                    >Очищення обличчя</span
-                                >
+                                <div class="procedures__card-container">
+                                    <img
+                                        src="./images/spatulaFace.jpg"
+                                        alt="Mask"
+                                        class="procedures__card-image"
+                                    />
+                                    <span class="procedures__card-text"
+                                        >Очищення обличчя</span
+                                    >
+                                </div>
                             </div>
                         </div>
                         <button class="carusel carusel-right">

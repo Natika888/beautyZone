@@ -213,7 +213,7 @@ body.lock {
   }
 }
 
-.burger {
+.burger__menu-btn {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -221,11 +221,11 @@ body.lock {
   height: 24px;
 }
 @media screen and (min-width: 1280px) {
-  .burger {
+  .burger__menu-btn {
     display: none;
   }
 }
-.burger__menu {
+.burger__menu-svg {
   fill: #fff;
 }
 

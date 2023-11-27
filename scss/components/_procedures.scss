@@ -33,22 +33,24 @@
     }
 
     &__card {
-        position: relative;
-        width: 345px;
-        height: 455px;
-        // flex-basis: calc((100%-40px)/3);
-        border-radius: 4px 120px;
-        // background: #d9d9d9;
-        background: linear-gradient(
-            180deg,
-            rgba(1, 28, 68, 0) 48.53%,
-            rgba(1, 28, 68, 0.73) 84.61%,
-            #011c44 101.39%
-        );
         transition: transform 0.3s;
 
         &:hover {
             transform: scale(1.05);
+        }
+
+        &-container {
+            position: relative;
+            justify-content: flex-end;
+            width: 345px;
+            height: 455px;
+            border-radius: 4px 120px;
+            background: linear-gradient(
+                180deg,
+                rgba(1, 28, 68, 0) 48.53%,
+                rgba(1, 28, 68, 0.73) 84.61%,
+                #011c44 101.39%
+            );
         }
     }
 

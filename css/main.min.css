@@ -109,6 +109,10 @@ h6 {
   color: var(--beauty-landing-2-c-2);
 }
 
+.lock {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -197,14 +201,25 @@ body.lock {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+  }
 }
 .header__container {
   position: relative;
 }
 .header__nav {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #eff5ff;
+  transform: translateX(100%);
+  transition: transform 0.3s;
 }
 @media screen and (min-width: 1280px) {
   .header__nav {
@@ -218,15 +233,6 @@ body.lock {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .menu__body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    gap: 40px;
-  }
-}
 .menu__list {
   display: flex;
 }
@@ -258,7 +264,7 @@ body.lock {
   height: 32px;
 }
 
-.burger {
+.burger__menu-btn {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -266,17 +272,20 @@ body.lock {
   height: 24px;
 }
 @media screen and (min-width: 1280px) {
-  .burger {
+  .burger__menu-btn {
     display: none;
   }
 }
-.burger__menu {
+
+.burger__menu-svg {
   fill: #fff;
 }
 
-.logo__img {
-  width: 74px;
-  height: 42px;
+@media screen and (min-width: 1280px) {
+  .logo__img {
+    width: 74px;
+    height: 42px;
+  }
 }
 
 .hero {
@@ -410,15 +419,18 @@ body.lock {
   margin-bottom: 32px;
 }
 .procedures__card {
-  position: relative;
-  width: 345px;
-  height: 455px;
-  border-radius: 4px 120px;
-  background: linear-gradient(180deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011c44 101.39%);
   transition: transform 0.3s;
 }
 .procedures__card:hover {
   transform: scale(1.05);
+}
+.procedures__card-container {
+  position: relative;
+  justify-content: flex-end;
+  width: 345px;
+  height: 455px;
+  border-radius: 4px 120px;
+  background: linear-gradient(180deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011c44 101.39%);
 }
 .procedures__card-image {
   position: absolute;
@@ -703,22 +715,46 @@ body.lock {
   margin-bottom: 8px;
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-  transform: translateX(100%);
-  transition: transform 0.3s;
-}
-.mobile-menu.is-open {
+.header__nav.active {
+  display: block;
   transform: translateX(0);
 }
-.mobile-menu__icon-close {
+.header__nav .logo {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  width: 57px;
+  height: 30px;
+}
+.header__nav .menu__list {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+  font-size: 32px;
+  padding-top: 50px;
+}
+.header__nav .socials__list {
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+}
+.header__nav__icon-close {
   position: absolute;
   top: 16px;
   right: 20px;
   fill: var(--beauty-landing-2-c-1);
+}
+
+.menu-btn-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.burger__menu > .logo {
+  position: absolute;
+  top: 16px;
+  width: 54px;
+  height: 30px;
 }/*# sourceMappingURL=main.min.css.map */
