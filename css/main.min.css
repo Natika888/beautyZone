@@ -24,9 +24,10 @@
 }
 :root {
   --beauty-landing-2-c-1: #011c44;
-  --beauty-landing-2-c-3: #4A4A4A;
+  --beauty-landing-2-c-3: #4a4a4a;
   --beauty-landing-2-c-2: #2b7fff;
   --beauty-landing-25: #747272;
+  --beauty-landing-2-c-6: #011f4a;
 }
 
 * {
@@ -305,11 +306,21 @@ body.lock {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    align-items: start;
+  }
+}
 .hero__subtitle {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1280px) {
+  .hero__subtitle {
+    margin-bottom: 16px;
+  }
 }
 .hero__title {
   text-transform: capitalize;
@@ -318,13 +329,34 @@ body.lock {
   line-height: 46px;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-size: 140px;
+    line-height: 114px;
+    max-width: 530px;
+    margin-bottom: 40px;
+  }
+}
 .hero__btn {
   font-size: 16px;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 1280px) {
+  .hero__btn {
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+}
 .hero__text {
   text-align: center;
   color: var(--beauty-landing-2-c-3);
+}
+@media screen and (min-width: 1280px) {
+  .hero__text {
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .choose {
@@ -717,6 +749,7 @@ body.lock {
 .header__nav.active {
   display: block;
   transform: translateX(0);
+  z-index: 2;
 }
 .header__nav .logo {
   position: absolute;
@@ -769,6 +802,7 @@ body.lock {
   position: absolute;
   top: 16px;
   right: 20px;
+  z-index: 3;
 }
 
 .burger__menu > .logo {
@@ -781,4 +815,45 @@ body.lock {
   .burger__menu > .logo {
     display: none;
   }
+}
+
+.about {
+  position: relative;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+}
+.about__title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.about__title > span {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.about__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: normal;
+}
+.about__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.about__icon {
+  position: absolute;
+  right: 22px;
+  bottom: -40px;
+  width: 40px;
+  height: 40px;
+  fill: var(--beauty-landing-2-c-6);
+}
+
+.strong {
+  font-weight: 700;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.min.css.map */

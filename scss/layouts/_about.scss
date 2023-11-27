@@ -1,0 +1,55 @@
+.about {
+
+    position: relative;
+    // .about__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .about__title
+
+    &__title {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 24px;
+
+        & > span {
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+
+    // .about__subtitle
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        line-height: normal;
+    }
+
+    // .about__text
+
+    &__text {
+        
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 22px;
+        bottom: -40px;
+        width: 40px;
+        height: 40px;
+        fill: var(--beauty-landing-2-c-6);
+    }
+}
+
+.strong {
+    font-weight: 700;
+    text-transform: capitalize;
+}

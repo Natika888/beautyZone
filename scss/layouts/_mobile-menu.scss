@@ -2,6 +2,7 @@
     &.active {
         display: block;
         transform: translateX(0);
+        z-index: 2;
     }
 
     .logo {
@@ -56,6 +57,7 @@
     position: absolute;
     top: 16px;
     right: 20px;
+    z-index: 3;
     // color: var(--beauty-landing-2-c-1);
     // fill: var(--beauty-landing-2-c-1);
 }
