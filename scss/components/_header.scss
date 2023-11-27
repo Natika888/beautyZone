@@ -24,13 +24,17 @@
         transition: transform 0.3s;
 
         @media screen and (min-width: $bp-desktop) {
-            display: flex;
+            position: static;
+            display: flex;            
             justify-content: space-between;
             align-items: center;
             flex-grow: 1;
             gap: 40px;
+            height: auto;
+            background-color: transparent;
             padding-top: 32px;
             padding-bottom: 32px;
+            transform: translateX(0);
         }
     }
 }
@@ -39,9 +43,7 @@
     &__list {
         display: flex;
 
-        @media screen and (min-width: $bp-desktop) {
-            gap: 56px;
-        }
+        
     }
 
     &__link {

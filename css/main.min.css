@@ -223,23 +223,22 @@ body.lock {
 }
 @media screen and (min-width: 1280px) {
   .header__nav {
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
     gap: 40px;
+    height: auto;
+    background-color: transparent;
     padding-top: 32px;
     padding-bottom: 32px;
+    transform: translateX(0);
   }
 }
 
 .menu__list {
   display: flex;
-}
-@media screen and (min-width: 1280px) {
-  .menu__list {
-    gap: 56px;
-  }
 }
 .menu__link {
   color: var(--beauty-landing-2-c-1, #011c44);
@@ -726,6 +725,13 @@ body.lock {
   width: 57px;
   height: 30px;
 }
+@media screen and (min-width: 1280px) {
+  .header__nav .logo {
+    position: static;
+    width: 74px;
+    height: 42px;
+  }
+}
 .header__nav .menu__list {
   flex-direction: column;
   align-items: center;
@@ -734,10 +740,23 @@ body.lock {
   font-size: 32px;
   padding-top: 50px;
 }
+@media screen and (min-width: 1280px) {
+  .header__nav .menu__list {
+    flex-direction: row;
+    gap: 56px;
+    height: auto;
+    padding-top: 0;
+  }
+}
 .header__nav .socials__list {
   height: 30vh;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1280px) {
+  .header__nav .socials__list {
+    height: auto;
+  }
 }
 .header__nav__icon-close {
   position: absolute;
@@ -757,4 +776,9 @@ body.lock {
   top: 16px;
   width: 54px;
   height: 30px;
+}
+@media screen and (min-width: 1280px) {
+  .burger__menu > .logo {
+    display: none;
+  }
 }/*# sourceMappingURL=main.min.css.map */
