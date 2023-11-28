@@ -58,7 +58,7 @@ body {
 @import './components/buttons';
 @import './components/links';
 @import './components/header';
-@import './components/hero';
+@import './layouts/hero';
 @import './components/choose';
 @import './components/procedures';
 @import './components/modal';
@@ -66,5 +66,6 @@ body {
 @import './components/find';
 @import './layouts/mobile-menu';
 @import './layouts/about';
+@import './layouts/footer';
 
 
