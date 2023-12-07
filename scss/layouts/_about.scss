@@ -1,22 +1,41 @@
 .about {
-
     position: relative;
+
+    @media screen and (min-width: $bp-desktop) {
+        display: flex;
+    }
     // .about__container
 
     &__container {
         display: flex;
-        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__content {
+        position: relative;
+        @media screen and (min-width: $bp-desktop) {
+            max-width: 700px;
+            margin-top: 40px;
+        }
     }
 
     // .about__title
 
     &__title {
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 700;
         margin-bottom: 24px;
+        max-width: 270px;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 64px;
+            font-weight: 700;
+            line-height: normal;
+            max-width: 520px;
+        }
 
         & > span {
-            font-weight: 700;
+            // font-weight: 700;
             text-transform: capitalize;
         }
     }
@@ -28,15 +47,26 @@
         font-weight: 400;
         margin-bottom: 16px;
         line-height: normal;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 22px;
+            line-height: 38px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
     }
 
     // .about__text
 
     &__text {
-        
         font-size: 18px;
         font-weight: 400;
         line-height: normal;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 22px;
+            line-height: 38px;
+        }
     }
 
     &__icon {
@@ -46,6 +76,31 @@
         width: 40px;
         height: 40px;
         fill: var(--beauty-landing-2-c-6);
+
+        @media screen and (min-width: $bp-desktop) {
+            right: -225px;
+            bottom: 300px;
+        }
+    }
+
+    &__images {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__image {
+        width: 335px;
+        height: 328px;
+        border-radius: 50%;
+
+        &.second {
+            margin-left: 170px;
+        }
     }
 }
 

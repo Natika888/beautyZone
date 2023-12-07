@@ -4,7 +4,7 @@
     padding-top: 40px;
 
     // .find__container
-    &__container {        
+    &__container {
         display: flex;
         flex-direction: column;
         flex-shrink: 1;
@@ -95,14 +95,13 @@
 
     // .find__form
     &__form {
-        
         // width: 75%;
 
         @media (min-width: $bp-desktop) {
         }
     }
 
-    &__form-title {        
+    &__form-title {
         margin-bottom: 24px;
 
         @media (min-width: $bp-desktop) {
@@ -110,11 +109,12 @@
         }
     }
 
-
     &__form-btn {
         width: 240px;
         margin-bottom: 8px;
     }
+}
 
-    
+.form-input {
+    color: white;
 }

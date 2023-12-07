@@ -309,6 +309,7 @@ body.lock {
 @media screen and (min-width: 1280px) {
   .hero__container {
     align-items: start;
+    padding-left: 120px;
   }
 }
 .hero__subtitle {
@@ -320,6 +321,8 @@ body.lock {
 @media screen and (min-width: 1280px) {
   .hero__subtitle {
     margin-bottom: 16px;
+    font-size: 18px;
+    line-height: normal;
   }
 }
 .hero__title {
@@ -345,15 +348,20 @@ body.lock {
   .hero__btn {
     margin-bottom: 14px;
     font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 32px;
   }
 }
 .hero__text {
+  max-width: 220px;
   text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
   color: var(--beauty-landing-2-c-3);
 }
 @media screen and (min-width: 1280px) {
   .hero__text {
-    text-align: left;
     font-size: 12px;
     line-height: 18px;
   }
@@ -746,6 +754,10 @@ body.lock {
   margin-bottom: 8px;
 }
 
+.form-input {
+  color: white;
+}
+
 .header__nav.active {
   display: block;
   transform: translateX(0);
@@ -820,17 +832,39 @@ body.lock {
 .about {
   position: relative;
 }
+@media screen and (min-width: 1280px) {
+  .about {
+    display: flex;
+  }
+}
 .about__container {
   display: flex;
-  flex-direction: column;
+  gap: 30px;
+}
+.about__content {
+  position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .about__content {
+    max-width: 700px;
+    margin-top: 40px;
+  }
 }
 .about__title {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 24px;
+  max-width: 270px;
+}
+@media screen and (min-width: 1280px) {
+  .about__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 520px;
+  }
 }
 .about__title > span {
-  font-weight: 700;
   text-transform: capitalize;
 }
 .about__subtitle {
@@ -839,10 +873,24 @@ body.lock {
   margin-bottom: 16px;
   line-height: normal;
 }
+@media screen and (min-width: 1280px) {
+  .about__subtitle {
+    font-size: 22px;
+    line-height: 38px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 .about__text {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (min-width: 1280px) {
+  .about__text {
+    font-size: 22px;
+    line-height: 38px;
+  }
 }
 .about__icon {
   position: absolute;
@@ -851,6 +899,30 @@ body.lock {
   width: 40px;
   height: 40px;
   fill: var(--beauty-landing-2-c-6);
+}
+@media screen and (min-width: 1280px) {
+  .about__icon {
+    right: -225px;
+    bottom: 300px;
+  }
+}
+.about__images {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .about__images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.about__image {
+  width: 335px;
+  height: 328px;
+  border-radius: 50%;
+}
+.about__image.second {
+  margin-left: 170px;
 }
 
 .strong {

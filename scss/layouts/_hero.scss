@@ -26,6 +26,7 @@
 
         @media screen and (min-width: $bp-desktop) {
             align-items: start;
+            padding-left: 120px;
         }
     }
 
@@ -37,6 +38,8 @@
 
         @media screen and (min-width: $bp-desktop) {
             margin-bottom: 16px;
+            font-size: 18px;
+            line-height: normal;
         }
     }
 
@@ -64,18 +67,23 @@
         @media screen and (min-width: $bp-desktop) {
             margin-bottom: 14px;
             font-size: 18px;
+            padding: 16px 32px;
+            border-radius: 32px;
         }
     }
 
     // .hero__text
 
     &__text {
+        max-width: 220px;
         text-align: center;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
         color: var(--beauty-landing-2-c-3);
 
         @media screen and (min-width: $bp-desktop) {
-            text-align: left;
-            font-size: 12px;            
+            font-size: 12px;
             line-height: 18px;
         }
     }
