@@ -4,46 +4,75 @@
     left: 0;
     width: 100%;
 
+    @media screen and (min-width: $bp-desktop) {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(5px);
+    }
+
     &__container {
         position: relative;
     }
 
     &__nav {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #eff5ff;
+        transform: translateX(100%);
+        transition: transform 0.3s;
 
         @media screen and (min-width: $bp-desktop) {
-            display: flex;
+            position: static;
+            display: flex;            
             justify-content: space-between;
             align-items: center;
             flex-grow: 1;
             gap: 40px;
-            padding-top: 42px;
-            padding-bottom: 42px;
+            height: auto;
+            background-color: transparent;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            transform: translateX(0);
         }
     }
 }
 
 .menu {
-
     &__list {
         display: flex;
 
-        @media screen and (min-width: $bp-desktop){
-        gap: 56px;
-        }
+        
     }
 
     &__link {
-        color: var(--beauty-landing-2-c-1, #011C44);
+        color: var(--beauty-landing-2-c-1, #011c44);
         @media screen and (min-width: $bp-desktop) {
             font-size: 18px;
             font-weight: 400;
+        }
 
+        &.colored {
+            color: var(--beauty-landing-2-c-2);
         }
     }
 }
 
-.burger {
+.socials {
+    &__list {
+        display: flex;
+        gap: 32px;
+        color: var(--beauty-landing-2-c-1);
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.burger__menu-btn {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -54,7 +83,18 @@
         display: none;
     }
 
-    &__menu {
-        fill: #fff;
+    
+}
+
+.burger__menu-svg {
+    fill: #fff;
+}
+
+.logo {
+    @media screen and (min-width: $bp-desktop) {
+        &__img {
+            width: 74px;
+            height: 42px;
+        }
     }
 }

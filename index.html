@@ -8,43 +8,131 @@
         <title>Beauty Zone</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header test">
             <div class="header__container">
                 <nav class="header__nav">
-                    <a href="#" class="logo"></a>
+                    <a href="#" class="logo">
+                        <img
+                            src="./images/logo.svg"
+                            alt="Logo"
+                            class="logo__img"
+                        />
+                    </a>
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#about" class="menu__link colored">Про нас</a>
+                            <a href="#about" class="menu__link colored"
+                                >Про нас</a
+                            >
                         </li>
                         <li class="menu__item">
                             <a href="#why" class="menu__link">Чому ми</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#procedures" class="menu__link"> Наші процедури </a>
+                            <a href="#procedures" class="menu__link">
+                                Наші процедури
+                            </a>
                         </li>
                         <li class="menu__item">
                             <a href="#find" class="menu__link"> Контакти </a>
-                        </li>                          
+                        </li>
                     </ul>
                     <ul class="socials__list">
-                        <li class="socials__item"></li>
-                        <li class="socials__item"></li>
-                        <li class="socials__item"></li>
+                        <li class="socials__item">
+                            <a
+                                href="tel:+380995327811"
+                                class="socials__link"
+                                target="_blank"
+                            >
+                                <svg class="socials__icon">
+                                    <use
+                                        href="./images/icons.svg#icon-telephone"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a
+                                href="https://www.facebook.com/"
+                                class="socials__link"
+                                target="_blank"
+                            >
+                                <svg class="socials__icon">
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a
+                                href="https://www.instagram.com/"
+                                class="socials__link"
+                                target="_blank"
+                            >
+                                <svg class="socials__icon">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-                <button class="burger menu-btn-open" type="button">
-                    <svg class="burger__menu" width="24" height="24">
-                        <use href="./images/icons.svg#icon-menu"></use>
+
+                <div class="burger__menu">
+                    <a href="#" class="logo">
+                        <img
+                            src="./images/logo.svg"
+                            alt="Logo"
+                            class="logo__img"
+                        />
+                    </a>
+                    <button
+                        class="burger__menu-btn menu-btn-open"
+                        type="button"
+                    >
+                        <svg class="burger__menu-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button
+                    class="menu__btn-close menu-btn-close visually-hidden"
+                    type="button"
+                >
+                    <svg
+                        class="icon-close"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                    >
+                        <path
+                            d="M8 8L16 16L24 8"
+                            stroke="#011C44"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M8 24L16 16L24 24"
+                            stroke="#011C44"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
                     </svg>
                 </button>
             </div>
-            <div class="mobile-menu">
-                <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            <!-- <div class="mobile-menu">
+                <button
+                    class="mobile-menu__btn-close menu-btn-close"
+                    type="button"
+                >
                     <svg class="mobile-menu__icon-close" width="24" height="24">
                         <use href="./images/icons.svg#icon-iconClose"></use>
                     </svg>
                 </button>
-            </div>
+            </div> -->
         </header>
         <main>
             <section class="hero">
@@ -53,15 +141,39 @@
                     <h1 class="hero__title colored">beauty zone</h1>
                     <button class="hero__btn btn">Замовити дзвінок</button>
                     <p class="hero__text">
-                        Запишись та отримай безкоштовну консультацію нашого
-                        косметолога
+                        Запишись та отримай безкоштовну <br />консультацію
+                        нашого косметолога
                     </p>
                 </div>
+            </section>
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title" id="about">
+                        Перевтілюйтесь в
+                        <span class="colored">beauty zone!</span>
+                    </h2>
+                    <p class="about__subtitle">
+                        Наша косметологічна клініка пропонує вам професійні
+                        послуги з догляду за шкірою обличчя та тіла.
+                    </p>
+                    <p class="about__text">
+                        B <span class="strong">beauty zone</span> ми гарантуємо
+                        найвищі стандарти якості та приємний сервіс. Наші
+                        косметологічні процедури та препарати допоможуть вам
+                        підтримувати свою красу та молодість. <br />
+                        З нами краса назавжди!
+                    </p>
+                </div>
+                <svg class="about__icon">
+                    <use href="./images/icons.svg#icon-Star"></use>
+                </svg>
             </section>
             <section class="choose">
                 <div class="choose__container">
                     <h2 class="choose__title" id="why">
-                        Чому люди <br><span class="colored">обирають нас</span>
+                        Чому люди <br /><span class="colored"
+                            >обирають нас</span
+                        >
                     </h2>
                     <div class="choose__cards">
                         <div class="choose__card">
@@ -96,7 +208,7 @@
                     </div>
                 </div>
             </section>
-            <section class="procedures ">
+            <section class="procedures">
                 <div class="procedures__container">
                     <h2 class="procedures__title" id="procedures">
                         Наші <span class="colored">процедури</span>
@@ -109,22 +221,40 @@
                         </button>
                         <div class="procedures__cards">
                             <div class="procedures__card">
-                                <img src="./images/maskFace.jpg" alt="Mask" class="procedures__card-image">
-                                <span class="procedures__card-text"
-                                    >Маски для обличчя</span
-                                >
+                                <div class="procedures__card-container">
+                                    <img
+                                        src="./images/maskFace.jpg"
+                                        alt="Mask"
+                                        class="procedures__card-image"
+                                    />
+                                    <span class="procedures__card-text"
+                                        >Маски для обличчя</span
+                                    >
+                                </div>
                             </div>
                             <div class="procedures__card">
-                                <img src="./images/needleFace.jpg" alt="Mask" class="procedures__card-image">
-                                <span class="procedures__card-text"
-                                    >Ін'єкції для обличчя</span
-                                >
+                                <div class="procedures__card-container">
+                                    <img
+                                        src="./images/needleFace.jpg"
+                                        alt="Mask"
+                                        class="procedures__card-image"
+                                    />
+                                    <span class="procedures__card-text"
+                                        >Ін'єкції для обличчя</span
+                                    >
+                                </div>
                             </div>
                             <div class="procedures__card">
-                                <img src="./images/spatulaFace.jpg" alt="Mask" class="procedures__card-image">
-                                <span class="procedures__card-text"
-                                    >Очищення обличчя</span
-                                >
+                                <div class="procedures__card-container">
+                                    <img
+                                        src="./images/spatulaFace.jpg"
+                                        alt="Mask"
+                                        class="procedures__card-image"
+                                    />
+                                    <span class="procedures__card-text"
+                                        >Очищення обличчя</span
+                                    >
+                                </div>
                             </div>
                         </div>
                         <button class="carusel carusel-right">
@@ -262,7 +392,119 @@
                 ></iframe>
             </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <a href="#" class="logo footer-menu">
+                        <img
+                            src="./images/logo.svg"
+                            alt="Logo"
+                            class="logo__img footer-menu"
+                        />
+                    </a>
+                    <ul class="menu__list footer-menu">
+                        <li class="menu__item">
+                            <a
+                                href="#about"
+                                class="menu__link footer-menu colored"
+                                >Про нас</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a href="#why" class="menu__link footer-menu"
+                                >Чому ми</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a
+                                href="#procedures"
+                                class="menu__link footer-menu"
+                            >
+                                Наші процедури
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#find" class="menu__link footer-menu">
+                                Контакти
+                            </a>
+                        </li>
+                        <li class="menu__item last-item">
+                            <a href="#" class="menu__link footer-menu">
+                                Політика конфіденційності
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contacts">
+                        <address class="address">
+                            <a
+                                href="tel:+ 38 (096) 000 00 07"
+                                class="address__phone"
+                                >+ 38 (096) 000 00 07</a
+                            >
+                            <a
+                                href="mailto:beautyzone@gmail.com"
+                                class="address__mail"
+                                >beautyzone@gmail.com</a
+                            >
+                            <a
+                                href="https://maps.app.goo.gl/fGTeTijySY4bMUqH8"
+                                target="_blank"
+                                class="address__address"
+                                >Україна, м. Київ, <br />вул. Тараса Шевченка 5</a
+                            >
+                        </address>
+    
+                        <ul class="socials__list footer-menu">
+                            <li class="socials__item footer-menu">
+                                <a
+                                    href="tel:+380995327811"
+                                    class="socials__link footer-menu"
+                                    target="_blank"
+                                >
+                                    <svg class="socials__icon footer-menu">
+                                        <use
+                                            href="./images/icons.svg#icon-telephone"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a
+                                    href="https://www.facebook.com/"
+                                    class="socials__link"
+                                    target="_blank"
+                                >
+                                    <svg class="socials__icon footer-menu">
+                                        <use
+                                            href="./images/icons.svg#icon-facebook"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a
+                                    href="https://www.instagram.com/"
+                                    class="socials__link"
+                                    target="_blank"
+                                >
+                                    <svg class="socials__icon footer-menu">
+                                        <use
+                                            href="./images/icons.svg#icon-instagram"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li class="menu__item last-item">
+                        <a href="#" class="menu__link footer-menu">
+                            Політика конфіденційності
+                        </a>
+                    </li>
+                    <span class="rights">© 2022 Дані захищені</span>
+                </nav>
+            </div>
+        </footer>
 
         <div class="backdrop visually-hidden">
             <div class="modal">
