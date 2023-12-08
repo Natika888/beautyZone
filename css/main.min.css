@@ -172,6 +172,17 @@ body.lock {
 
 .wrapper {
   background: linear-gradient(rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%);
+  -webkit-mask-image: url(../images/bg.svg);
+  mask-image: url(../images/bg.svg);
+  mask-position: 47% 43%;
+  mask-size: 3000px 1500px;
+  mask-repeat: no-repeat;
+}
+@media (min-width: 1280px) {
+  .wrapper {
+    mask-position: center top;
+    mask-size: 2000px 1500px;
+  }
 }
 
 .btn {
@@ -372,10 +383,11 @@ body.lock {
 }
 
 .choose {
-  padding-top: 104px;
+  padding-top: 110px;
 }
 @media (min-width: 1280px) {
   .choose {
+    padding-top: 176px;
     padding-bottom: 96px;
   }
 }

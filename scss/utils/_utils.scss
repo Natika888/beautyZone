@@ -8,5 +8,19 @@
 }
 
 .wrapper {
-    background: linear-gradient( rgba(43, 127, 255, 0.20) 39.74%, rgba(43, 127, 255, 0.00) 54.16%, rgba(43, 127, 255, 0.00) 66.66%);;
+    background: linear-gradient(
+        rgba(43, 127, 255, 0.2) 39.74%,
+        rgba(43, 127, 255, 0) 54.16%,
+        rgba(43, 127, 255, 0) 66.66%
+    );
+    -webkit-mask-image: url(../images/bg.svg);
+    mask-image: url(../images/bg.svg);
+    mask-position: 47% 43%;
+    mask-size: 3000px 1500px;
+    mask-repeat: no-repeat;
+
+    @media (min-width: $bp-desktop) {
+        mask-position: center top;
+        mask-size: 2000px 1500px;
+    }
 }
