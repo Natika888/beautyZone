@@ -19,22 +19,31 @@
 
     &__content {
         display: flex;
-        align-items: center;
+        align-items: center;        
         gap: 32px;
     }
 
     // .procedures__images
 
     &__cards {
-        display: flex;
-        flex-wrap: wrap;
+        max-width: 345px;
+        display: flex; 
+        justify-content: space-around;       
+        overflow: hidden;
+        // flex-wrap: wrap;
         gap: 16px;
         margin-bottom: 32px;
+
+        @media screen and (min-width: $bp-desktop) {
+            max-width: none;
+        }
     }
 
     &__card {
         transition: transform 0.3s;
-
+        // width: 320px;
+        // height: 415px;
+        // overflow: hidden;
         &:hover {
             transform: scale(1.05);
         }
@@ -42,8 +51,9 @@
         &-container {
             position: relative;
             justify-content: flex-end;
-            width: 345px;
-            height: 455px;
+            
+            width: 320px;            
+            height: 415px;
             border-radius: 4px 120px;
             background: linear-gradient(
                 180deg,
@@ -56,8 +66,8 @@
 
     &__card-image {
         position: absolute;
-        width: 345px;
-        height: 455px;
+        width: 320px;
+        height: 415px;
         border-radius: 4px 120px;
         z-index: -1;
     }
