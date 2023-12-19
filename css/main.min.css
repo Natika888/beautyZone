@@ -171,6 +171,7 @@ body.lock {
 }
 
 .wrapper {
+  padding-top: 100px;
   background: linear-gradient(rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%);
   -webkit-mask-image: url(../images/bg.svg);
   mask-image: url(../images/bg.svg);
@@ -178,10 +179,16 @@ body.lock {
   mask-size: 3000px 1500px;
   mask-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .wrapper {
+    padding-top: 100px;
+    mask-size: 2000px 2000px;
+  }
+}
 @media (min-width: 1280px) {
   .wrapper {
     mask-position: center top;
-    mask-size: 2000px 1500px;
+    mask-size: 3000px 2000px;
   }
 }
 
@@ -306,6 +313,7 @@ body.lock {
 
 .hero {
   display: flex;
+  align-items: center;
   position: relative;
   z-index: 2;
   padding-top: 70px;
@@ -315,9 +323,15 @@ body.lock {
   background-size: cover;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 565px) {
+  .hero {
+    min-height: 687px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .hero {
     min-height: 658px;
+    height: 100vh;
     flex: 1 0;
     padding-top: 123px;
     padding-bottom: 130px;
@@ -560,6 +574,7 @@ body.lock {
   align-items: center;
   justify-content: center;
   z-index: 5;
+  overflow-x: scroll;
 }
 
 .modal {
@@ -568,6 +583,7 @@ body.lock {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: auto;
   border-radius: 24px;
   background-color: var(--beauty-landing-2-c-1);
   padding: 42px 24px;
@@ -575,8 +591,9 @@ body.lock {
 }
 @media (min-width: 768px) {
   .modal {
-    width: 625px;
-    height: 580px;
+    max-width: 625px;
+    max-height: 100dvh;
+    overflow: scroll;
   }
 }
 @media (min-width: 1280px) {

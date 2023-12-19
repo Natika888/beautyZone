@@ -8,6 +8,7 @@
 }
 
 .wrapper {
+    padding-top: 100px;
     background: linear-gradient(
         rgba(43, 127, 255, 0.2) 39.74%,
         rgba(43, 127, 255, 0) 54.16%,
@@ -19,8 +20,13 @@
     mask-size: 3000px 1500px;
     mask-repeat: no-repeat;
 
+    @media (min-width: $bp-tablet) {
+        padding-top: 100px;
+        mask-size: 2000px 2000px;
+    }
+
     @media (min-width: $bp-desktop) {
         mask-position: center top;
-        mask-size: 2000px 1500px;
+        mask-size: 3000px 2000px;
     }
 }

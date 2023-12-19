@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
+    overflow-x: scroll;
 }
 
 .modal {
@@ -16,15 +17,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    overflow: auto;
     border-radius: 24px;
     background-color: var(--beauty-landing-2-c-1);
-    padding: 42px 24px;
+    padding: 42px 24px;    
     color: white;
 
     @media (min-width: $bp-tablet) {
-        width: 625px;
-        height: 580px;
+        max-width: 625px;        
+        max-height: 100dvh;
+        overflow: scroll;
     }
 
     @media (min-width: $bp-desktop) {
