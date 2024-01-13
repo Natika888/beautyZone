@@ -7,18 +7,23 @@
     overflow: hidden;
 }
 
+.lock {
+    overflow: hidden;
+    padding-right: 17px;
+}
+
 .wrapper {
-    padding-top: 100px;
+    // padding-top: 100px;
     background: linear-gradient(
         rgba(43, 127, 255, 0.2) 39.74%,
         rgba(43, 127, 255, 0) 54.16%,
         rgba(43, 127, 255, 0) 66.66%
     );
-    -webkit-mask-image: url(../images/bg.svg);
-    mask-image: url(../images/bg.svg);
-    mask-position: 47% 43%;
-    mask-size: 3000px 1500px;
-    mask-repeat: no-repeat;
+    // -webkit-mask-image: url(../images/bg.svg);
+    // mask-image: url(../images/bg.svg);
+    // mask-position: 47% 43%;
+    // mask-size: 3000px 1500px;
+    // mask-repeat: no-repeat;
 
     @media (min-width: $bp-tablet) {
         padding-top: 100px;

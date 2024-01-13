@@ -26,16 +26,19 @@
     // .procedures__images
 
     &__cards {
-        max-width: 345px;
+        position: relative;
+        // max-width: 345px;
         display: flex; 
         justify-content: space-around;       
-        overflow: hidden;
-        // flex-wrap: wrap;
+        // overflow: hidden;
+        flex-wrap: wrap;
         gap: 16px;
         margin-bottom: 32px;
 
         @media screen and (min-width: $bp-desktop) {
             max-width: none;
+            width: 100%;
+            height: 415px;
         }
     }
 
@@ -44,15 +47,15 @@
         // width: 320px;
         // height: 415px;
         // overflow: hidden;
-        &:hover {
-            transform: scale(1.05);
-        }
+        // &:hover {
+        //     transform: scale(1.05);
+        // }
 
         &-container {
             position: relative;
             justify-content: flex-end;
             
-            width: 320px;            
+            width: 310px;            
             height: 415px;
             border-radius: 4px 120px;
             background: linear-gradient(
@@ -61,15 +64,22 @@
                 rgba(1, 28, 68, 0.73) 84.61%,
                 #011c44 101.39%
             );
+            @media screen and (min-width: $bp-desktop) {
+                width: 320px;
+            }
         }
     }
 
     &__card-image {
         position: absolute;
-        width: 320px;
+        width: 310px;
         height: 415px;
         border-radius: 4px 120px;
         z-index: -1;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 100%;
+        }
     }
 
     &__card-text {
@@ -108,11 +118,28 @@
         fill: #fff;
     }
 }
-.carusel-nav {
-}
+
 .carusel-dot {
     fill: var(--beauty-landing-25);
+    cursor: pointer;
+}
+
+.carusel-dot:hover {
+    fill: var(--beauty-landing-2-c-2);
 }
 .dot-active {
     fill: var(--beauty-landing-2-c-2);
+}
+
+.procedures__card.first {
+    position: absolute;
+    left: 0;
+}
+.procedures__card.second {
+    position: absolute;
+    left: 336px;
+}
+.procedures__card.third {
+    position: absolute;
+    left: 672px;
 }

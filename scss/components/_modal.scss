@@ -26,7 +26,7 @@
     @media (min-width: $bp-tablet) {
         max-width: 625px;        
         max-height: 100dvh;
-        overflow: scroll;
+        // overflow: scroll;
     }
 
     @media (min-width: $bp-desktop) {
