@@ -172,7 +172,7 @@ body.lock {
 
 .lock {
   overflow: hidden;
-  padding-right: 17px;
+  background-color: #D0CBC8;
 }
 
 .wrapper {

@@ -3,17 +3,25 @@ const modal = document.querySelector('.modal');
 const modalBtnOpen = document.querySelector('.btn');
 const modalBtnClose = document.querySelector('.close');
 const body = document.querySelector('body');
-const findFormBtn = document.querySelector('.find__form-btn');
+
+let fixBlocks = document.querySelectorAll('.fix-block');
 
 
 const openModal = () => {
+    let paddingOffSet = window.innerWidth - document.body.offsetWidth + 'px';
     body.classList.add('lock');
     backdrop.classList.remove('visually-hidden');
+    fixBlocks.forEach((el)=> {
+        el.style.paddingRight = paddingOffSet;        
+    })    
 }
 
 const closeModal = () => {
     body.classList.remove('lock');
     backdrop.classList.add('visually-hidden');
+    fixBlocks.forEach((el)=> {
+        el.style.paddingRight = 0;
+    })
 }
 
 document.addEventListener('click', (e) => {    
@@ -30,3 +38,6 @@ document.addEventListener('click', (e) => {
 
 modalBtnOpen.addEventListener('click', openModal);
 modalBtnClose.addEventListener('click', closeModal);
+// findFormBtn.addEventListener('click',(e) => {
+//     e.preventDefault();
+// } );

@@ -4,11 +4,21 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Beauty Zone" />
+        <meta
+            property="og:image"
+            content="https://github.com/Natika888/beautyZone/tree/main/images/background.png"
+        />
         <link rel="stylesheet" href="./css/main.min.css" />
         <title>Beauty Zone</title>
+        <link
+            rel="shortcut icon"
+            href="./images/favicon.ico"
+            type="image/x-icon"
+        />
     </head>
-    <body>
-        <header class="header">
+    <body class="fix-block">
+        <header class="header fix-block">
             <div class="header__container">
                 <nav class="header__nav">
                     <a href="#" class="logo">
@@ -347,6 +357,7 @@
                                     <input
                                         class="form-input"
                                         type="text"
+                                        required
                                         name="user-name"
                                         id="user-name"
                                         placeholder="Ваше ім'я та прізвище"
@@ -361,6 +372,7 @@
                                     <input
                                         class="form-input"
                                         type="tel"
+                                        required
                                         name="user-phone"
                                         id="user-phone"
                                         placeholder="Ваш номер телефону"
@@ -377,6 +389,7 @@
                                     <input
                                         class="form-input"
                                         type="email"
+                                        required
                                         name="user-email"
                                         id="user-email"
                                         placeholder="Ваша електронна пошта"
